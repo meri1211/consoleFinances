@@ -98,3 +98,11 @@ for (let i = 0; i < finances.length; i++) {
   console.log(total);
 }
 console.log("Total:" + total);
+
+// Creating a new array made of the changes between current month minus previous month.
+let monthlyDiffArray = [];
+
+for (let i = 1; i < finances.length; i++) {
+  monthlyDiffArray.push(finances[i][1] - finances[i-1][1]);
+};
+console.log(monthlyDiffArray);
