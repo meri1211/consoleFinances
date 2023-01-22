@@ -103,6 +103,21 @@ console.log("Total:" + total);
 let monthlyDiffArray = [];
 
 for (let i = 1; i < finances.length; i++) {
-  monthlyDiffArray.push(finances[i][1] - finances[i-1][1]);
-};
+  monthlyDiffArray.push(finances[i][1] - finances[i - 1][1]);
+}
 console.log(monthlyDiffArray);
+
+// Finding out the sum of the differences so that we can divide it by the number of months and get the average. Used a for-loop to iterate over the array and add each result to the totalDifferences variable.
+
+let totalDifferences = 0;
+for (let i = 0; i < monthlyDiffArray.length; i++) {
+  totalDifferences += monthlyDiffArray[i];
+}
+console.log(totalDifferences);
+
+// **The total difference needs to be divided to 85 months as we've been told in class that the readme is wrong for taking January as a full difference (Dec 2009 missing).
+// I have used the to.Fixed() method to reduce the number of decimals for the result, to two.
+
+let averageOfChanges = totalDifferences / (totalMonths - 1);
+console.log(averageOfChanges);
+console.log(averageOfChanges.toFixed(2));
