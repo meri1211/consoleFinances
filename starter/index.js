@@ -122,8 +122,11 @@ let averageOfChanges = totalDifferences / (totalMonths - 1);
 console.log(averageOfChanges);
 console.log(averageOfChanges.toFixed(2));
 
-
 // Finding out the greatest increase in profits over the entire period.
 let greatestIncrease = Math.max(...monthlyDiffArray);
 console.log(greatestIncrease);
+
+// The greatest decrease in losses  over the entire period.
+let greatestDecrease = Math.min(...monthlyDiffArray);
+console.log(greatestDecrease);
 
