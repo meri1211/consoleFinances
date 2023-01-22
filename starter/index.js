@@ -90,7 +90,7 @@ let finances = [
 let totalMonths = finances.length;
 console.log("Total months: " + totalMonths);
 
-// Finding out the net total amount of Profit/Losses over the entire period. We use a for-loop to iterate over the array and add all the element in position [i][1], where the amounts are.
+// Finding out the net total amount of Profit/Losses over the entire period. We use a for-loop to iterate over the array and add all the elements in position [i][1], where the amounts are.
 
 let total = 0;
 for (let i = 0; i < finances.length; i++) {
@@ -115,9 +115,15 @@ for (let i = 0; i < monthlyDiffArray.length; i++) {
 }
 console.log(totalDifferences);
 
-// **The total difference needs to be divided to 85 months as we've been told in class that the readme is wrong for taking January as a full difference (Dec 2009 missing).
+// **The total difference needs to be divided to 85 not 86 months as we've been told in class that the readme is wrong for taking January as a full difference (Dec 2009 missing).
 // I have used the to.Fixed() method to reduce the number of decimals for the result, to two.
 
 let averageOfChanges = totalDifferences / (totalMonths - 1);
 console.log(averageOfChanges);
 console.log(averageOfChanges.toFixed(2));
+
+
+// Finding out the greatest increase in profits over the entire period.
+let greatestIncrease = Math.max(...monthlyDiffArray);
+console.log(greatestIncrease);
+
