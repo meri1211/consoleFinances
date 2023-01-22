@@ -89,3 +89,12 @@ let finances = [
 // We need to find the total number of elements in the array to determine the number of months. We can use the array.length property.
 let totalMonths = finances.length;
 console.log("Total months: " + totalMonths);
+
+// Finding out the net total amount of Profit/Losses over the entire period. We use a for-loop to iterate over the array and add all the element in position [i][1], where the amounts are.
+
+let total = 0;
+for (let i = 0; i < finances.length; i++) {
+  total += finances[i][1];
+  console.log(total);
+}
+console.log("Total:" + total);
