@@ -126,7 +126,15 @@ console.log(averageOfChanges.toFixed(2));
 let greatestIncrease = Math.max(...monthlyDiffArray);
 console.log(greatestIncrease);
 
-// The greatest decrease in losses  over the entire period.
+// The greatest decrease in profits over the entire period.
 let greatestDecrease = Math.min(...monthlyDiffArray);
 console.log(greatestDecrease);
+
+// Logging the results of the analysis to the console.
+
+console.log("***Financial Analysis***");
+console.log("Total Months: " + totalMonths);
+console.log("Average Change: " + averageOfChanges.toFixed(2));
+console.log("Greatest Increase in Profits: " + greatestIncrease);
+console.log("Greatest Decrease in Profits: " + greatestDecrease);
 
