@@ -6,7 +6,7 @@
 
 I have analysed the financial records of a company using JavaScript variables, for loops and arrays in order to get different information from a given data set.
 
-Here is the link to the deployed app (Console-Finances- resubmission)[https://meri1211.github.io/console-finances-resubmission/].
+Here is the link to the deployed app (Console-Finances)[https://meri1211.github.io/console-finances-resubmission/].
 
 
 
